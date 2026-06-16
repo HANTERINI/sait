@@ -1,0 +1,71 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 2%;
+    --foreground: 0 0% 98%;
+    --primary: 0 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 100% 50%;
+    --accent-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --radius: 0.75rem;
+
+    /* Additional Colors */
+    --orange: 24 100% 50%;
+    --purple: 270 100% 60%;
+    --blue: 210 100% 50%;
+    --emerald: 150 100% 45%;
+    --crimson: 340 100% 45%;
+    --cyan: 180 100% 50%;
+    --lime: 75 100% 50%;
+    --gold: 45 100% 50%;
+    --magenta: 300 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-[#050000] text-foreground font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+.glass {
+  @apply bg-white/[0.02] backdrop-blur-md border border-white/[0.05];
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-red-600 via-orange to-red-900;
+}
+
+.bg-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 0, 0, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 0, 0, 0.02) 1px, transparent 1px);
+}
+
+.bg-ambient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: 
+    radial-gradient(circle at 0% 0%, rgba(220, 38, 38, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(124, 58, 237, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(249, 115, 22, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(132, 204, 22, 0.05) 0%, transparent 50%);
+}
