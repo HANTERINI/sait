@@ -378,12 +378,6 @@ const TOOLS_DATA = {
       'download_url': 'https://drive.google.com/file/d/1j6eXoP1-xit5XfDBHgjZJmmTG3wWnB7b/view?usp=drive_link',
       'password': 'H-squad'
     },
-    'abdul sploits cueza_pidor': {
-      'content': 'обыкновенный експлоит',
-
-      'download_url': 'https://drive.google.com/file/d/1GvltBwQV4P6pUEAH2hfCEIKa2kO2foKY/view?usp=drive_link',
-      'password': 'H-squad'
-    },
     'WizXploit': {
       'content': 'Мощный инструмент для эксплуатации уязвимостей, обладающий широким набором функций для тестирования безопасности и анализа сетевых протоколов. Включает в себя автоматизированные модули для поиска и использования брешей в защите.',
       'image': '/W78YUIHWE.png',
